@@ -103,10 +103,6 @@ int main(int argc, char *argv[]) {
         strptime(user_time, "%H:%M:%S", &timer_time);
     }
 
-    mvprintw(10, 0, "%d", timer_time.tm_sec);
-    mvprintw(11, 0, "%d", timer_time.tm_min);
-    mvprintw(12, 0, "%d", timer_time.tm_hour);
-
     time(&start_time);
 
     while(1) {
